@@ -9,7 +9,7 @@ exports.convert = function (UNIX_timestamp){
   var hour = ('0'+a.getHours()).slice(-2);
   var min = ('0'+a.getMinutes()).slice(-2);
   var sec = ('0'+a.getSeconds()).slice(-2);
-//var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-  var time = year + '.' + month + '.' + date + '.' + hour + '.' + min + '.' + sec ;
+  var time = year + '-' + month + '-' + date + ' ' + hour + ':' + min + ':' + sec ;
+  //var time = year + '.' + month + '.' + date + '.' + hour + '.' + min + '.' + sec ;
   return time;
 }
